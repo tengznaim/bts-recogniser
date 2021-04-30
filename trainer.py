@@ -42,6 +42,6 @@ face_recogniser = cv.face.LBPHFaceRecognizer_create()
 faces = np.array(faces, dtype="object")
 labels = np.array(labels)
 
-face_recogniser.train(np.array(faces), np.array(labels))
+face_recogniser.train(faces, labels)
 
 face_recogniser.save("faces_trained.yml")
