@@ -17,3 +17,4 @@ Any machine learning project requires data, and a whole lot of it.
 ### References
 
 1. https://levelup.gitconnected.com/how-to-download-google-images-using-python-2021-82e69c637d59
+2. https://www.pyimagesearch.com/2015/03/02/convert-url-to-image-with-python-and-opencv/
