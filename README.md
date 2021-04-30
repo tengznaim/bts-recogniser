@@ -18,3 +18,10 @@ Any machine learning project requires data, and a whole lot of it.
 
 1. https://levelup.gitconnected.com/how-to-download-google-images-using-python-2021-82e69c637d59
 2. https://www.pyimagesearch.com/2015/03/02/convert-url-to-image-with-python-and-opencv/
+
+## 2. Train the Model
+
+### References
+
+1. https://www.superdatascience.com/blogs/opencv-face-recognition
+2. https://towardsdatascience.com/face-recognition-how-lbph-works-90ec258c3d6b
