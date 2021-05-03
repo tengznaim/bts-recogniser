@@ -19,7 +19,8 @@ This project is composed of a few steps:
 
 ### Updates
 
-- 3/5/2021 - Trained an early stage model with 9 images for each member. Recognises certain members correctly but with very low confidence (eg. RM with 39%)
+- 3/5/2021 - Trained an early stage model with 9 images for each member. Recognises certain members correctly but with very low confidence (eg. RM with 39%, honestly this is still better than me as a human)
+  ![image](https://user-images.githubusercontent.com/63803360/116885986-1f2d5c80-ac5b-11eb-9cda-100c200b8b7d.png)
 
 ### References
 
