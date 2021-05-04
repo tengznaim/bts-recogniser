@@ -10,14 +10,15 @@ import time
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 
-search_queries = ["jungkook bts portrait",
-                  "v bts portrait", "jimin bts portrait", "jin bts portrait", "suga bts portrait", "j-hope bts portrait", "rm bts portrait"]
+folders = ["jungkook", "v", "jimin", "jin", "suga", "j-hope", "rm"]
+search_queries = ["jungkook",
+                  "taehyung", "jimin", "jin", "suga", "j-hope", "rm"]
 training_data_path = os.path.join(os.getcwd(), "training")
 haar_cascade = cv.CascadeClassifier(os.path.join(
     os.getcwd(), "haarcascade_frontalface_default.xml"))
 
-for query in search_queries:
-    folder_path = os.path.join(training_data_path, query[:query.index(" ")])
+for i in range(search_queries):
+    folder_path = os.path.join(training_data_path, folders[i])
 
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
@@ -26,13 +27,13 @@ for query in search_queries:
 
     search_box = driver.find_element_by_xpath(
         '//*[@id="sbtc"]/div/div[2]/input')
-    search_box.send_keys(query)
+    search_box.send_keys(search_queries[i])
     search_box.send_keys(Keys.ENTER)
 
     i = 0
-    img_count = 1
+    img_count = len(os.listdir(folder_path)) + 1
 
-    while img_count != 10:
+    while img_count != 20:
         i += 1
         print(i)
         try:
@@ -63,7 +64,7 @@ for query in search_queries:
                 user_validation = input("Save this image? y/n:")
 
                 if user_validation == "y":
-                    save_name = f'{query[:query.index(" ")]}({img_count}).png'
+                    save_name = f'{folders[i]}({img_count}).png'
                     save_path = os.path.join(folder_path, save_name)
                     io.imsave(save_path, original)
                     img_count += 1

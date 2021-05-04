@@ -44,4 +44,6 @@ labels = np.array(labels)
 
 face_recogniser.train(faces, labels)
 
-face_recogniser.save("faces_trained.yml")
+print(len(faces), len(labels))
+
+face_recogniser.save("bts_faces_trained.yml")
