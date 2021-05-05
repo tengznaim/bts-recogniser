@@ -25,6 +25,8 @@ This project is composed of a few steps:
 
 - 4/5/2021 - Increased training data for certain members (planning to have more and equal number for all members) and trained a new model `bts_faced_trained.yml`. Accuracy of prediction improved but confidence remains low.
 
+- 5/5/2021 - Weirdly, the second model trained with more data became less accurate and less confident. Planning to start fresh and reobtain training data.
+
 ### References
 
 - Automating the Search for Training Data

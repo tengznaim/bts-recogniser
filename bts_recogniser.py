@@ -9,10 +9,10 @@ validation_directory = os.path.join(os.getcwd(), "validation")
 haar_cascade = cv.CascadeClassifier(os.path.join(
     os.getcwd(), "haarcascade_frontalface_default.xml"))
 face_recogniser = cv.face.LBPHFaceRecognizer_create()
-face_recogniser.read("bts_faces_trained.yml")
+face_recogniser.read("faces_trained.yml")
 
 img = cv.imread(os.path.join(validation_directory,
-                             "v", "v(1).jpg"))
+                             "v", "v(2).jpeg"))
 img = imutils.resize(img, height=min(img.shape[0], 600))
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
