@@ -5,7 +5,7 @@ import time
 
 training_data_path = os.path.join(os.getcwd(), "training")
 
-people = [i for i in os.listdir(training_data_path)]
+people = os.listdir(training_data_path)
 
 faces = []
 labels = []

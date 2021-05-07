@@ -12,7 +12,7 @@ face_recogniser = cv.face.LBPHFaceRecognizer_create()
 face_recogniser.read("faces_trained.yml")
 
 img = cv.imread(os.path.join(validation_directory,
-                             "v", "v(2).jpeg"))
+                             "rm", "rm(2).jpeg"))
 img = imutils.resize(img, height=min(img.shape[0], 600))
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
